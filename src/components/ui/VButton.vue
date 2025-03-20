@@ -43,7 +43,7 @@ const sizeClasses = computed(() => {
   }
 });
 
-const getColor = (isHovering: boolean | null): ButtonColors => {
+const getColor = (isHovering: boolean | null | undefined): ButtonColors => {
   if (!isHovering && !props.disabled) return ColorsEnum.BRAND_1;
   if (isHovering && !props.disabled) return ColorsEnum.BRAND_2;
 

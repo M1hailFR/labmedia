@@ -86,6 +86,14 @@ const onSendForm = async () => {
       // TODO: прикрутить апи и остальную логику
       console.log('типа отправлено');
       emit('send-form', 'success');
+      form.value = {
+        name: '',
+        city: '',
+        company: '',
+        phone: '',
+        email: '',
+        message: ''
+      };
     } catch (error) {
       console.error('Ошибка при отправке формы:', error);
       emit('send-form', 'error');
