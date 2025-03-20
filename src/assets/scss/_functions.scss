@@ -1,0 +1,3 @@
+@function get-rgb-color($color, $opacity: 1, $prefix-color: '--v-theme-') {
+  @return rgba(var(#{$prefix-color}#{$color}), $opacity);
+}

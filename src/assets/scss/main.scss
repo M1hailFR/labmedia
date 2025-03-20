@@ -1,0 +1,16 @@
+@include font-face('ProximaNova', '../fonts/ProximaNova/ProximaNova-Regular', 400);
+@include font-face('ProximaNova', '../fonts/ProximaNova/ProximaNova-Bold', 700);
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+}
+
+.v-container {
+  padding-top: 0;
+  padding-bottom: 0;
+  max-width: 1232px !important;
+}

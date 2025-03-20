@@ -1,0 +1,78 @@
+$font-family: 'ProximaNova', sans-serif;
+
+@use 'vuetify/settings' with (
+  $typography: (
+    'title1': (
+      'size': 48px,
+      'weight': 700,
+      'line-height': 1,
+      'letter-spacing': -0.48px,
+      'font-family': $font-family,
+      'text-transform': none
+    ),
+    'title2': (
+      'size': 40px,
+      'weight': 700,
+      'line-height': 1,
+      'letter-spacing': -0.4px,
+      'font-family': $font-family,
+      'text-transform': none
+    ),
+    'title3': (
+      'size': 32px,
+      'weight': 700,
+      'line-height': 1,
+      'letter-spacing': normal,
+      'font-family': $font-family,
+      'text-transform': none
+    ),
+    'title4': (
+      'size': 24px,
+      'weight': 700,
+      'line-height': 1,
+      'letter-spacing': normal,
+      'font-family': $font-family,
+      'text-transform': none
+    ),
+    'title5': (
+      'size': 18px,
+      'weight': 700,
+      'line-height': 24px,
+      'letter-spacing': normal,
+      'font-family': $font-family,
+      'text-transform': none
+    ),
+    'title6': (
+      'size': 16px,
+      'weight': 700,
+      'line-height': 24px,
+      'letter-spacing': normal,
+      'font-family': $font-family,
+      'text-transform': none
+    ),
+    'body1': (
+      'size': 18px,
+      'weight': 400,
+      'line-height': 24px,
+      'letter-spacing': normal,
+      'font-family': $font-family,
+      'text-transform': none
+    ),
+    'body2': (
+      'size': 16px,
+      'weight': 400,
+      'line-height': 24px,
+      'letter-spacing': normal,
+      'font-family': $font-family,
+      'text-transform': none
+    ),
+    'body3': (
+      'size': 12px,
+      'weight': 400,
+      'line-height': 16px,
+      'letter-spacing': normal,
+      'font-family': $font-family,
+      'text-transform': none
+    )
+  )
+);

@@ -1,0 +1,26 @@
+@mixin below($width, $orientation: 'width') {
+  @media screen and (max-#{$orientation}: $width) {
+    @content;
+  }
+}
+
+@mixin above($width, $orientation: 'width') {
+  @media screen and (min-#{$orientation}: $width) {
+    @content;
+  }
+}
+
+@mixin between($minWidth, $maxWidth, $orientation: 'width') {
+  @media screen and (min-#{$orientation}: $minWidth) and (max-#{$orientation}: $maxWidth) {
+    @content;
+  }
+}
+
+@mixin font-face($font-family, $file-path, $weight: normal, $style: normal) {
+  @font-face {
+    font-family: $font-family;
+    font-weight: $weight;
+    font-style: $style;
+    src: url('#{$file-path}.ttf');
+  }
+}
